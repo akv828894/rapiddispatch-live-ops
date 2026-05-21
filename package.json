@@ -2,6 +2,7 @@
   "name": "rapiddispatch-live-ops",
   "private": true,
   "version": "1.0.0",
+  "description": "Real-time support ticket locking dashboard for freight operations.",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",

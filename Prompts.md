@@ -1,12 +1,12 @@
-# AI Transparency Notes
+# Development Assistance Log
 
-This project was built with AI assistance during local development.
+This file is included for the course transparency requirement.
 
-Prompts used:
+Support requested during development:
 
-- Asked for help planning a Week 19 real-time helpdesk project with React, Express, Socket.io, in-memory ticket locks, and ghost disconnect handling.
-- Asked for implementation support for a production-style Socket.io server using a `Map` as the source of truth for ticket locks.
-- Asked for UI support for a two-window demo that shows live lock state, disabled edit buttons, reconnect warning, save/unlock, close/unlock, and new-ticket streaming.
+- Planning the real-time helpdesk flow for ticket locking, release, and ghost disconnects.
+- Structuring a Socket.io server where an in-memory `Map` owns active ticket locks.
+- Reviewing the two-window demo path for lock state, disabled edit buttons, reconnect warning, save/release, close/release, and live ticket creation.
 
 Manual review checklist:
 

@@ -1,6 +1,6 @@
 # RapidDispatch Live Ops Helpdesk
 
-Real-time support ticket board for RapidDispatch Freight & Logistics. The app uses React, Express, and Socket.io to prevent support agents from overwriting each other while editing the same ticket.
+Real-time support ticket board for RapidDispatch Freight & Logistics. The system prevents two agents from editing the same support ticket at the same time by keeping ticket locks on the WebSocket server.
 
 ## Features
 
@@ -37,14 +37,14 @@ Backend health check: `http://localhost:4000/health`
 
 ## Deployment Notes
 
-Backend environment on Render:
+Backend environment:
 
 ```bash
 PORT=4000
 CLIENT_ORIGIN=https://your-vercel-app.vercel.app
 ```
 
-Frontend environment on Vercel:
+Frontend environment:
 
 ```bash
 VITE_SOCKET_URL=https://your-render-service.onrender.com
