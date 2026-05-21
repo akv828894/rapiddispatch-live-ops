@@ -5,7 +5,10 @@ import { createServer } from 'node:http'
 import { Server } from 'socket.io'
 
 const PORT = process.env.PORT || 4000
-const allowedOrigins = (process.env.CLIENT_ORIGIN || 'http://localhost:5173')
+const defaultClientOrigins =
+  'http://localhost:5173,https://rapiddispatch-live-ops.vercel.app'
+
+const allowedOrigins = (process.env.CLIENT_ORIGIN || defaultClientOrigins)
   .split(',')
   .map((origin) => origin.trim())
   .filter(Boolean)
